@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="homepage.css"rel="stylesheet" type="text/css">
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<body>
+    <div class="header">
+      <h1>GAMemes</h1>
+      <p>We got GAMES and MEMES. </p>
+    </div>
+    
+    <div class="topnav">
+      <a class="active" href="homepage.html">Home</a>
+      <a href="aboutus.html">About</a>
+      <a href="contactus.html">Contact</a>
+     <a href="signup.html" style=float:right>Sign Up</a> 
+     <a href="login.html" style=float:right>Login</a>
+      
+      <input type="text" placeholder="Search......">
+    </div>
+<center>
+    <!-- Slide Show -->
+    <section>
+      <img class="mySlides" src="face.jpg" style="width:50%">
+      <img class="mySlides" src="pubg.jpg" style="width:50%">
+      <img class="mySlides" src="MEMES.jpg" style="width:50%">
+      <img class="mySlides" src="lol.jpg" style="width:50%">
+      <img class="mySlides" src="memeh.jpg" style="width:50%">
+      <img class="mySlides" src="fortnite.jpg" style="width:50%">
+    </section>
+    <script>
+    // Automatic Slideshow - change image every 3 seconds
+    var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}
+      x[myIndex-1].style.display = "block";
+      setTimeout(carousel, 3000);
+    }
+    </script>
+
+    <div class="row">
+      <div class="leftcolumn">
+        <div class="card">
+          <h2>GAMemes</h2>
+          <h3>For your entertainment we got...</h3>
+        </div>
+      </div>
+    </div>
+</center>    
+    <div class="img" style="height:80px;font-size: xx-large;"> 
+      <img src="logos.jpg" alt="games" style="width:30%">
+      <a href="games.html" class="button" style="float: inline-start;">GAMES</a>
+      <img src="memee.jpg" alt="games" style=float:right;width:30%>
+      <a href="memes.html"class="button" style="float: right;">MEMES</a>
+    </div>
+
+<br><br><br><br><br><br><br><br><br><br><br>
+
+        <div class="footer">
+            Copyright &copy; 2020 JEREMIAH FERNANDEZ.<br>
+            All rights reserved.<br/>
+            
+        </div> 
+        
+        </body>
+    </html>
